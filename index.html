@@ -52,13 +52,23 @@
   </style>
   <script type="text/javascript">
   	function myFunction()
-{var x=document.getElementById("fname").value;
+{
+var x=document.getElementById("fname").value;
+var elems = document.getElementsByName("TESTING");
  if(x != "nancydrew425")
  {
-document.getElementsByName("TESTING").style.visibility="hidden"
+for(var i = 0; i < elems.length; i++)
+{
+elems[i].style.display = 'none';
  }
+}
 else
-document.getElementsByName("TESTING").style.visibility = 'visible'
+{
+	for(var i = 0; i < elems.length; i++)
+{
+elems[i].style.display = 'inline';
+ }
+}
 
 
 }
