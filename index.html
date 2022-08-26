@@ -55,14 +55,11 @@
 {var x=document.getElementById("fname").value;
  if(x != "nancydrew425")
  {
-document.querySelectorAll('#TESTING, #TESTING2, #TESTING3, #TESTING4, #TESTING5').style.visibility="hidden"
+document.getElementsByName("TESTING").style.visibility="hidden"
  }
 else
-document.getElementById("TESTING").style.visibility = 'visible'
-document.getElementById("TESTING2").style.visibility = 'visible'
-document.getElementById("TESTING3").style.visibility = 'visible'
-document.getElementById("TESTING4").style.visibility = 'visible'
-document.getElementById("TESTING5").style.visibility = 'visible'
+document.getElementsByName("TESTING").style.visibility = 'visible'
+
 
 }
   </script>
@@ -72,7 +69,7 @@ document.getElementById("TESTING5").style.visibility = 'visible'
 <input type="text" id="fname" name="fname" onchange="myFunction();">
 
 
-<div class="flip-card" id="TESTING">
+<div class="flip-card" name="TESTING">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="https://opengameart.org/sites/default/files/card%20back%20red.png" alt="Avatar" style="width:300px;height:400px;">
@@ -82,7 +79,7 @@ document.getElementById("TESTING5").style.visibility = 'visible'
     </div>
   </div>
 </div>
-<div class="flip-card" id="TESTING2">
+<div class="flip-card" name="TESTING">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="https://opengameart.org/sites/default/files/card%20back%20red.png" alt="Avatar" style="width:300px;height:400px;">
@@ -92,7 +89,7 @@ document.getElementById("TESTING5").style.visibility = 'visible'
     </div>
   </div>
 </div>
-<div class="flip-card" id="TESTING3">
+<div class="flip-card" name="TESTING">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="https://opengameart.org/sites/default/files/card%20back%20red.png" alt="Avatar" style="width:300px;height:400px;">
@@ -102,7 +99,7 @@ document.getElementById("TESTING5").style.visibility = 'visible'
     </div>
   </div>
 </div>
-<div class="flip-card" id="TESTING4">
+<div class="flip-card" name="TESTING">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="https://opengameart.org/sites/default/files/card%20back%20red.png" alt="Avatar" style="width:300px;height:400px;">
@@ -112,7 +109,7 @@ document.getElementById("TESTING5").style.visibility = 'visible'
     </div>
   </div>
 </div>
-<div class="flip-card" id="TESTING5">
+<div class="flip-card" name="TESTING">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="https://opengameart.org/sites/default/files/card%20back%20red.png" alt="Avatar" style="width:300px;height:400px;">
