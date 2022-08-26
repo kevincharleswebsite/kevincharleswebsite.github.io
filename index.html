@@ -50,12 +50,16 @@
   transform: rotateY(180deg);
 }
   </style>
+  <script type="text/javascript">
+  	var x = document.getElementById("fname").value;
+  	document.getElementById("sample").innerHTML = x;
+  </script>
 </head>
 <body>
 	<label for="fname">Password:</label>
 <input type="text" id="fname" name="fname">
+<h1 id="sample"></h1>
 
-<h1>document.getElementById('fname').value</h1>
 
 <div class="flip-card">
   <div class="flip-card-inner">
