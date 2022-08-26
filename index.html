@@ -55,11 +55,7 @@
 {var x=document.getElementById("fname").value;
  if(x != "nancydrew425")
  {
-document.getElementById("TESTING").style.visibility="hidden"
-document.getElementById("TESTING2").style.visibility="hidden"
-document.getElementById("TESTING3").style.visibility="hidden"
-document.getElementById("TESTING4").style.visibility="hidden"
-document.getElementById("TESTING5").style.visibility="hidden"
+document.querySelectorAll('#TESTING, #TESTING2, #TESTING3, #TESTING4, #TESTING5').style.visibility="hidden"
  }
 else
 document.getElementById("TESTING").style.visibility = 'visible'
