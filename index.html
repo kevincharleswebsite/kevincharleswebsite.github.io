@@ -51,17 +51,24 @@
 }
   </style>
   <script type="text/javascript">
-  	var x = document.getElementById("fname").value;
-  	document.getElementById("sample").innerHTML = x;
+  	function myFunction()
+{var x=document.getElementById("fname").value;
+ if(x.length>=1)
+ {
+document.getElementById("TESTING").style.visibility="visible";
+ }
+else
+document.getElementById("TESTING").style.visibility = 'hidden';
+
+}
   </script>
 </head>
 <body>
 	<label for="fname">Password:</label>
-<input type="text" id="fname" name="fname">
-<h1 id="sample"></h1>
+<input type="text" id="fname" name="fname" onchange="myFunction();">
 
 
-<div class="flip-card">
+<div class="flip-card" id="TESTING">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="https://opengameart.org/sites/default/files/card%20back%20red.png" alt="Avatar" style="width:300px;height:400px;">
